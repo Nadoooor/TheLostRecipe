@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://d0xb4vmx4pjfc"]
+
+[ext_resource type="Texture2D" uid="uid://cxqhxe0neq6n8" path="res://assets/bg.png" id="1_2wwur"]
+[ext_resource type="Texture2D" uid="uid://dfod5dh5jktlw" path="res://assets/Box.png" id="2_1qpqp"]
+[ext_resource type="Script" uid="uid://vb2d5fnklteh" path="res://Scenes/Scripts/ramin_box.gd" id="3_6hct4"]
+[ext_resource type="PackedScene" uid="uid://d0dtnk8a2qxik" path="res://Scenes/Noodles.tscn" id="4_1qpqp"]
+[ext_resource type="Texture2D" uid="uid://gwkpao8wmfio" path="res://assets/Boat.png" id="4_y0ac1"]
+[ext_resource type="Texture2D" uid="uid://0stt5em2shvn" path="res://assets/customer.png" id="5_eorc4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kry3j"]
+size = Vector2(677.35425, 494.46036)
+
+[node name="Main" type="Node2D" unique_id=102969712]
+
+[node name="bg" type="Sprite2D" parent="." unique_id=1223228354]
+position = Vector2(573, 327)
+scale = Vector2(1.6823529, 1.3346939)
+texture = ExtResource("1_2wwur")
+
+[node name="RaminBox" type="Sprite2D" parent="." unique_id=1206286558]
+position = Vector2(90, 580)
+scale = Vector2(0.18897058, 0.19617355)
+texture = ExtResource("2_1qpqp")
+script = ExtResource("3_6hct4")
+item_to_spawn = ExtResource("4_1qpqp")
+
+[node name="RaminBoxArea" type="Area2D" parent="RaminBox" unique_id=1858639613]
+
+[node name="RaminBoxColl" type="CollisionShape2D" parent="RaminBox/RaminBoxArea" unique_id=548450876]
+position = Vector2(0, 2.5488281)
+scale = Vector2(0.9999997, 0.9999998)
+shape = SubResource("RectangleShape2D_kry3j")
+
+[node name="EagBox" type="Sprite2D" parent="." unique_id=2071093682]
+position = Vector2(236.5, 578.5)
+scale = Vector2(0.20441175, 0.19795935)
+texture = ExtResource("2_1qpqp")
+
+[node name="ChickenBox" type="Sprite2D" parent="." unique_id=1911068187]
+position = Vector2(384.50003, 576.125)
+scale = Vector2(0.17794108, 0.19948985)
+texture = ExtResource("2_1qpqp")
+
+[node name="BeefBox" type="Sprite2D" parent="." unique_id=1024690052]
+position = Vector2(524, 575)
+scale = Vector2(0.19117647, 0.19387755)
+texture = ExtResource("2_1qpqp")
+
+[node name="PoilingBoat" type="Sprite2D" parent="." unique_id=1488604855]
+position = Vector2(673, 577.25)
+scale = Vector2(0.22647063, 0.26020408)
+texture = ExtResource("4_y0ac1")
+
+[node name="ServingPlate" type="Sprite2D" parent="." unique_id=1943695612]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2090060006]
+offset_left = 961.0
+offset_top = 61.0
+offset_right = 1117.0
+offset_bottom = 281.0
+
+[node name="Customer" type="Sprite2D" parent="." unique_id=1551067252]
+position = Vector2(118.00002, 393)
+scale = Vector2(0.57231396, 0.4530612)
+texture = ExtResource("5_eorc4")
+
+[node name="FryingPan" type="Sprite2D" parent="." unique_id=2045520453]
+
+[connection signal="input_event" from="RaminBox/RaminBoxArea" to="RaminBox" method="_on_ramin_box_area_input_event"]
