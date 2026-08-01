@@ -1,57 +1,172 @@
 [gd_scene format=3 uid="uid://d0xb4vmx4pjfc"]
 
 [ext_resource type="Texture2D" uid="uid://cxqhxe0neq6n8" path="res://assets/bg.png" id="1_2wwur"]
+[ext_resource type="Texture2D" uid="uid://cn6iee6etjsaw" path="res://assets/Table.png" id="1_fkw1m"]
 [ext_resource type="Texture2D" uid="uid://dfod5dh5jktlw" path="res://assets/Box.png" id="2_1qpqp"]
 [ext_resource type="Script" uid="uid://vb2d5fnklteh" path="res://Scenes/Scripts/ramin_box.gd" id="3_6hct4"]
 [ext_resource type="PackedScene" uid="uid://d0dtnk8a2qxik" path="res://Scenes/Noodles.tscn" id="4_1qpqp"]
-[ext_resource type="Texture2D" uid="uid://gwkpao8wmfio" path="res://assets/Boat.png" id="4_y0ac1"]
+[ext_resource type="PackedScene" uid="uid://dki0y10m5u7cf" path="res://Scenes/Beef.tscn" id="4_6hct4"]
 [ext_resource type="Texture2D" uid="uid://0stt5em2shvn" path="res://assets/customer.png" id="5_eorc4"]
+[ext_resource type="PackedScene" uid="uid://bek3tibrdmkp2" path="res://Scenes/Chicken.tscn" id="5_y0ac1"]
+[ext_resource type="PackedScene" uid="uid://dk320i2mxyf66" path="res://Scenes/Egg.tscn" id="6_eorc4"]
+[ext_resource type="Texture2D" uid="uid://dd6epcx1ljvmw" path="res://assets/Pot.png" id="8_fkw1m"]
+[ext_resource type="Script" uid="uid://gx0f8fvbo0wt" path="res://Scenes/Scripts/poiling_boat.gd" id="9_fkw1m"]
+[ext_resource type="Texture2D" uid="uid://cojqfp28jmg2w" path="res://assets/Serving.png" id="10_rakbq"]
+[ext_resource type="Texture2D" uid="uid://d4liub8bowu5c" path="res://assets/Heater.png" id="11_l3qly"]
+
+[sub_resource type="FontVariation" id="FontVariation_bwr10"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kry3j"]
-size = Vector2(677.35425, 494.46036)
+size = Vector2(148.16124, 133.50243)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l3qly"]
+radius = 257.39703
 
 [node name="Main" type="Node2D" unique_id=102969712]
 
 [node name="bg" type="Sprite2D" parent="." unique_id=1223228354]
-position = Vector2(573, 327)
-scale = Vector2(1.6823529, 1.3346939)
+position = Vector2(583.00006, 763)
+scale = Vector2(3.120482, 1.3346939)
+texture = ExtResource("1_fkw1m")
+
+[node name="backbg" type="Sprite2D" parent="bg" unique_id=1097011211]
+z_index = -10
+position = Vector2(-1.7625504, -319.54895)
+scale = Vector2(0.28866735, 0.68575853)
 texture = ExtResource("1_2wwur")
 
-[node name="RaminBox" type="Sprite2D" parent="." unique_id=1206286558]
-position = Vector2(90, 580)
-scale = Vector2(0.18897058, 0.19617355)
+[node name="Ramen" type="Label" parent="bg" unique_id=300196370]
+offset_left = -186.83014
+offset_top = -110.88683
+offset_right = -141.32437
+offset_bottom = -90.134544
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Ramen"
+horizontal_alignment = 1
+
+[node name="Ramen" type="Label" parent="bg/Ramen" unique_id=1737259374]
+layout_mode = 0
+offset_left = 41.660233
+offset_top = 4.339218e-05
+offset_right = 87.166
+offset_bottom = 20.752333
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Beef"
+horizontal_alignment = 1
+
+[node name="Ramen" type="Label" parent="bg/Ramen/Ramen" unique_id=1833646138]
+layout_mode = 0
+offset_left = 41.660233
+offset_top = 4.339218e-05
+offset_right = 87.166
+offset_bottom = 20.752333
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Chicken"
+horizontal_alignment = 1
+
+[node name="Ramen" type="Label" parent="bg/Ramen/Ramen/Ramen" unique_id=605112010]
+layout_mode = 0
+offset_left = 41.660233
+offset_top = 4.339218e-05
+offset_right = 87.166
+offset_bottom = 20.752333
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Egg"
+horizontal_alignment = 1
+
+[node name="RamenBox" type="Sprite2D" parent="." unique_id=1206286558]
+position = Vector2(68, 543)
+scale = Vector2(0.849, 0.835)
 texture = ExtResource("2_1qpqp")
 script = ExtResource("3_6hct4")
 item_to_spawn = ExtResource("4_1qpqp")
 
-[node name="RaminBoxArea" type="Area2D" parent="RaminBox" unique_id=1858639613]
+[node name="RamenBoxArea" type="Area2D" parent="RamenBox" unique_id=1858639613]
 
-[node name="RaminBoxColl" type="CollisionShape2D" parent="RaminBox/RaminBoxArea" unique_id=548450876]
-position = Vector2(0, 2.5488281)
-scale = Vector2(0.9999997, 0.9999998)
+[node name="RamenBoxColl" type="CollisionShape2D" parent="RamenBox/RamenBoxArea" unique_id=548450876]
+position = Vector2(2.645935, 2.5488281)
+scale = Vector2(0.9999995, 0.9999998)
 shape = SubResource("RectangleShape2D_kry3j")
+metadata/_edit_lock_ = true
 
-[node name="EagBox" type="Sprite2D" parent="." unique_id=2071093682]
-position = Vector2(236.5, 578.5)
-scale = Vector2(0.20441175, 0.19795935)
+[node name="BeefBox" type="Sprite2D" parent="." unique_id=1371871328]
+position = Vector2(199.5, 543.125)
+scale = Vector2(0.8492461, 0.84966195)
 texture = ExtResource("2_1qpqp")
+script = ExtResource("3_6hct4")
+item_to_spawn = ExtResource("4_6hct4")
 
-[node name="ChickenBox" type="Sprite2D" parent="." unique_id=1911068187]
-position = Vector2(384.50003, 576.125)
-scale = Vector2(0.17794108, 0.19948985)
+[node name="RaminBoxArea" type="Area2D" parent="BeefBox" unique_id=1221507234]
+
+[node name="RaminBoxColl" type="CollisionShape2D" parent="BeefBox/RaminBoxArea" unique_id=1332064927]
+position = Vector2(0, 2.5488281)
+scale = Vector2(0.9999996, 0.99999976)
+shape = SubResource("RectangleShape2D_kry3j")
+metadata/_edit_lock_ = true
+
+[node name="ChickenBox" type="Sprite2D" parent="." unique_id=133485087]
+position = Vector2(330, 544)
+scale = Vector2(0.849, 0.849)
 texture = ExtResource("2_1qpqp")
+script = ExtResource("3_6hct4")
+item_to_spawn = ExtResource("5_y0ac1")
 
-[node name="BeefBox" type="Sprite2D" parent="." unique_id=1024690052]
-position = Vector2(524, 575)
-scale = Vector2(0.19117647, 0.19387755)
+[node name="RaminBoxArea" type="Area2D" parent="ChickenBox" unique_id=8485245]
+
+[node name="RaminBoxColl" type="CollisionShape2D" parent="ChickenBox/RaminBoxArea" unique_id=717452716]
+position = Vector2(0, 2.5488281)
+scale = Vector2(0.99999964, 0.99999976)
+shape = SubResource("RectangleShape2D_kry3j")
+metadata/_edit_lock_ = true
+
+[node name="EggBox" type="Sprite2D" parent="." unique_id=1589049036]
+position = Vector2(458, 544)
+scale = Vector2(0.849, 0.849)
 texture = ExtResource("2_1qpqp")
+script = ExtResource("3_6hct4")
+item_to_spawn = ExtResource("6_eorc4")
 
-[node name="PoilingBoat" type="Sprite2D" parent="." unique_id=1488604855]
-position = Vector2(673, 577.25)
-scale = Vector2(0.22647063, 0.26020408)
-texture = ExtResource("4_y0ac1")
+[node name="RaminBoxArea" type="Area2D" parent="EggBox" unique_id=980014067]
+position = Vector2(51.983543, 45.434326)
+scale = Vector2(0.97485363, 0.8892823)
+
+[node name="RaminBoxColl" type="CollisionShape2D" parent="EggBox/RaminBoxArea" unique_id=639875179]
+position = Vector2(-48.385742, -43.237183)
+scale = Vector2(0.9999997, 0.99999976)
+shape = SubResource("RectangleShape2D_kry3j")
+metadata/_edit_lock_ = true
+
+[node name="boilingPot" type="Sprite2D" parent="." unique_id=1488604855]
+z_index = 1
+position = Vector2(674.09546, 496.37546)
+scale = Vector2(0.3095879, 0.25089288)
+texture = ExtResource("8_fkw1m")
+script = ExtResource("9_fkw1m")
+metadata/_edit_group_ = true
+
+[node name="Area2D" type="Area2D" parent="boilingPot" unique_id=1961092820 groups=["poat"]]
+position = Vector2(-66.967705, 21.541271)
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boilingPot/Area2D" unique_id=1506609008]
+position = Vector2(66.96772, -21.541222)
+rotation = -0.68395716
+shape = SubResource("CircleShape2D_l3qly")
+metadata/_edit_lock_ = true
 
 [node name="ServingPlate" type="Sprite2D" parent="." unique_id=1943695612]
+position = Vector2(1025, 530)
+scale = Vector2(0.2810242, 0.2810242)
+texture = ExtResource("10_rakbq")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2090060006]
 offset_left = 961.0
@@ -60,10 +175,20 @@ offset_right = 1117.0
 offset_bottom = 281.0
 
 [node name="Customer" type="Sprite2D" parent="." unique_id=1551067252]
-position = Vector2(118.00002, 393)
-scale = Vector2(0.57231396, 0.4530612)
+z_index = -1
+position = Vector2(88, 492)
+scale = Vector2(1.5012555, 1.6454881)
 texture = ExtResource("5_eorc4")
 
 [node name="FryingPan" type="Sprite2D" parent="." unique_id=2045520453]
 
-[connection signal="input_event" from="RaminBox/RaminBoxArea" to="RaminBox" method="_on_ramin_box_area_input_event"]
+[node name="Heater" type="Sprite2D" parent="." unique_id=1550496653]
+position = Vector2(674.1909, 560.4109)
+scale = Vector2(0.28249297, 0.24047449)
+texture = ExtResource("11_l3qly")
+metadata/_edit_group_ = true
+
+[connection signal="input_event" from="RamenBox/RamenBoxArea" to="RamenBox" method="_on_ramin_box_area_input_event"]
+[connection signal="input_event" from="BeefBox/RaminBoxArea" to="BeefBox" method="_on_ramin_box_area_input_event"]
+[connection signal="input_event" from="ChickenBox/RaminBoxArea" to="ChickenBox" method="_on_ramin_box_area_input_event"]
+[connection signal="input_event" from="EggBox/RaminBoxArea" to="EggBox" method="_on_ramin_box_area_input_event"]

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dk320i2mxyf66"]
+
+[ext_resource type="Texture2D" uid="uid://cktnuj4vxg88y" path="res://assets/Egg.png" id="1_dyx0d"]
+[ext_resource type="Script" uid="uid://bt1tepghs4lqx" path="res://Scenes/Scripts/egg.gd" id="1_eh8xx"]
+
+[node name="Egg" type="Sprite2D" unique_id=1278509049]
+position = Vector2(608, 373)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_dyx0d")
+script = ExtResource("1_eh8xx")

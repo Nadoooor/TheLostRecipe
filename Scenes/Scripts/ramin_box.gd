@@ -15,11 +15,11 @@ func _on_ramin_box_area_input_event(viewport: Node, event: InputEvent, shape_idx
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			print("raminpressed")
-			var newNoodle = item_to_spawn.instantiate()
-			get_parent().add_child(newNoodle)
+			var newItem = item_to_spawn.instantiate()
+			get_parent().add_child(newItem)
 			
-			newNoodle.global_position = get_global_mouse_position()
-			newNoodle.draging = true 
+			newItem.global_position = get_global_mouse_position()
+			newItem.draging = true 
 			
 			
 			

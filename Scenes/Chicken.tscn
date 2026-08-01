@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bek3tibrdmkp2"]
+
+[ext_resource type="Script" uid="uid://jiagqv07x45" path="res://Scenes/Scripts/chicken.gd" id="1_3mj6s"]
+[ext_resource type="Texture2D" uid="uid://bv7v1jrbu2rt4" path="res://assets/Chicken.png" id="1_ixs66"]
+
+[node name="Chicken" type="Sprite2D" unique_id=449507744]
+position = Vector2(585, 321)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ixs66")
+script = ExtResource("1_3mj6s")

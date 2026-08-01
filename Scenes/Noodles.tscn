@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cm1op7i52vcpt" path="res://assets/Noodles.jpg" id="1_hl5nw"]
 [ext_resource type="Script" uid="uid://bshvdwdj60ets" path="res://Scenes/Scripts/noodles.gd" id="1_w3nna"]
 
-[node name="Noodles" type="Sprite2D" unique_id=1034022883]
+[node name="Beef" type="Sprite2D" unique_id=1034022883]
 position = Vector2(556, 337)
 scale = Vector2(0.7, 0.66)
 texture = ExtResource("1_hl5nw")

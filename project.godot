@@ -15,6 +15,10 @@ run/main_scene="uid://d0xb4vmx4pjfc"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[global_group]
+
+poat=""
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
