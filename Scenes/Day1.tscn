@@ -6,7 +6,6 @@
 [ext_resource type="Script" uid="uid://vb2d5fnklteh" path="res://Scenes/Scripts/ramin_box.gd" id="3_6hct4"]
 [ext_resource type="PackedScene" uid="uid://d0dtnk8a2qxik" path="res://Scenes/Noodles.tscn" id="4_1qpqp"]
 [ext_resource type="PackedScene" uid="uid://dki0y10m5u7cf" path="res://Scenes/Beef.tscn" id="4_6hct4"]
-[ext_resource type="Texture2D" uid="uid://0stt5em2shvn" path="res://assets/customer.png" id="5_eorc4"]
 [ext_resource type="PackedScene" uid="uid://bek3tibrdmkp2" path="res://Scenes/Chicken.tscn" id="5_y0ac1"]
 [ext_resource type="PackedScene" uid="uid://dk320i2mxyf66" path="res://Scenes/Egg.tscn" id="6_eorc4"]
 [ext_resource type="Texture2D" uid="uid://dd6epcx1ljvmw" path="res://assets/Pot.png" id="8_fkw1m"]
@@ -204,12 +203,6 @@ offset_left = 961.0
 offset_top = 61.0
 offset_right = 1117.0
 offset_bottom = 281.0
-
-[node name="Customer" type="Sprite2D" parent="." unique_id=1551067252]
-z_index = -1
-position = Vector2(270, 488)
-scale = Vector2(1.5012555, 1.6454881)
-texture = ExtResource("5_eorc4")
 
 [node name="FryingPan" type="Sprite2D" parent="." unique_id=2045520453]
 

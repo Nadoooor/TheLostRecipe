@@ -11,8 +11,8 @@ customer_sprites = Array[Texture2D]([ExtResource("3_yuhl3")])
 
 [node name="Node2D" type="Node2D" parent="." unique_id=699240221]
 
-[node name="Timer" type="Timer" parent="Node2D" unique_id=322541822]
+[node name="guestcoming" type="Timer" parent="Node2D" unique_id=322541822]
+unique_name_in_owner = true
 wait_time = 5.0
-autostart = true
 
-[connection signal="timeout" from="Node2D/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Node2D/guestcoming" to="." method="_on_timer_timeout"]
