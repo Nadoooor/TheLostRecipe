@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 func _on_ramin_box_area_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-			print("raminpressed")
+			print("ramenpressed")
 			var newItem = item_to_spawn.instantiate()
 			get_parent().add_child(newItem)
 			

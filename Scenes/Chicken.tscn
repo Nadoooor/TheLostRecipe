@@ -3,8 +3,19 @@
 [ext_resource type="Script" uid="uid://jiagqv07x45" path="res://Scenes/Scripts/chicken.gd" id="1_3mj6s"]
 [ext_resource type="Texture2D" uid="uid://bv7v1jrbu2rt4" path="res://assets/Chicken.png" id="1_ixs66"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ixs66"]
+size = Vector2(510, 348)
+
 [node name="Chicken" type="Sprite2D" unique_id=449507744]
 position = Vector2(585, 321)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_ixs66")
 script = ExtResource("1_3mj6s")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1730448395]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1497444441]
+position = Vector2(1, -18)
+shape = SubResource("RectangleShape2D_ixs66")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

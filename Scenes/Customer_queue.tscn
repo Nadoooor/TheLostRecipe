@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cdtjtkqk21dft"]
+
+[ext_resource type="Script" uid="uid://6trpsiopap3i" path="res://Scenes/Scripts/customer_Spawner.gd" id="1_nkusv"]
+[ext_resource type="PackedScene" uid="uid://ccuidwxhumjhx" path="res://Scenes/Customer1.tscn" id="2_nic6i"]
+[ext_resource type="Texture2D" uid="uid://0stt5em2shvn" path="res://assets/customer.png" id="3_yuhl3"]
+
+[node name="CustomerQueue" type="Node2D" unique_id=588104561]
+script = ExtResource("1_nkusv")
+customer_scene = ExtResource("2_nic6i")
+customer_sprites = Array[Texture2D]([ExtResource("3_yuhl3")])
+
+[node name="Node2D" type="Node2D" parent="." unique_id=699240221]
+
+[node name="Timer" type="Timer" parent="Node2D" unique_id=322541822]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Node2D/Timer" to="." method="_on_timer_timeout"]

@@ -13,6 +13,8 @@
 [ext_resource type="Script" uid="uid://gx0f8fvbo0wt" path="res://Scenes/Scripts/poiling_boat.gd" id="9_fkw1m"]
 [ext_resource type="Texture2D" uid="uid://cojqfp28jmg2w" path="res://assets/Serving.png" id="10_rakbq"]
 [ext_resource type="Texture2D" uid="uid://d4liub8bowu5c" path="res://assets/Heater.png" id="11_l3qly"]
+[ext_resource type="Script" uid="uid://ce5jjkll85ijn" path="res://Scenes/Scripts/serving_plate.gd" id="12_okst0"]
+[ext_resource type="PackedScene" uid="uid://cdtjtkqk21dft" path="res://Scenes/Customer_queue.tscn" id="15_fuc61"]
 
 [sub_resource type="FontVariation" id="FontVariation_bwr10"]
 
@@ -21,6 +23,9 @@ size = Vector2(148.16124, 133.50243)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l3qly"]
 radius = 257.39703
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fuc61"]
+radius = 177.10034
 
 [node name="Main" type="Node2D" unique_id=102969712]
 
@@ -36,50 +41,71 @@ scale = Vector2(0.28866735, 0.68575853)
 texture = ExtResource("1_2wwur")
 
 [node name="Ramen" type="Label" parent="bg" unique_id=300196370]
-offset_left = -186.83014
-offset_top = -110.88683
-offset_right = -141.32437
-offset_bottom = -90.134544
+offset_left = -186.83012
+offset_top = -110.88681
+offset_right = -141.32436
+offset_bottom = -90.13452
 theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
 theme_override_fonts/font = SubResource("FontVariation_bwr10")
 theme_override_font_sizes/font_size = 10
 text = "Ramen"
 horizontal_alignment = 1
 
-[node name="Ramen" type="Label" parent="bg/Ramen" unique_id=1737259374]
-layout_mode = 0
-offset_left = 41.660233
-offset_top = 4.339218e-05
-offset_right = 87.166
-offset_bottom = 20.752333
-theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
-theme_override_fonts/font = SubResource("FontVariation_bwr10")
-theme_override_font_sizes/font_size = 10
-text = "Beef"
-horizontal_alignment = 1
-
-[node name="Ramen" type="Label" parent="bg/Ramen/Ramen" unique_id=1833646138]
-layout_mode = 0
-offset_left = 41.660233
-offset_top = 4.339218e-05
-offset_right = 87.166
-offset_bottom = 20.752333
+[node name="Chicken" type="Label" parent="bg" unique_id=1833646138]
+offset_left = -103.50967
+offset_top = -110.88669
+offset_right = -58.0039
+offset_bottom = -90.1344
 theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
 theme_override_fonts/font = SubResource("FontVariation_bwr10")
 theme_override_font_sizes/font_size = 10
 text = "Chicken"
 horizontal_alignment = 1
 
-[node name="Ramen" type="Label" parent="bg/Ramen/Ramen/Ramen" unique_id=605112010]
-layout_mode = 0
-offset_left = 41.660233
-offset_top = 4.339218e-05
-offset_right = 87.166
-offset_bottom = 20.752333
+[node name="Beef" type="Label" parent="bg" unique_id=1737259374]
+offset_left = -145.16989
+offset_top = -110.88672
+offset_right = -99.66412
+offset_bottom = -90.13443
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Beef"
+horizontal_alignment = 1
+
+[node name="Egg" type="Label" parent="bg" unique_id=605112010]
+offset_left = -61.849426
+offset_top = -110.88663
+offset_right = -16.343658
+offset_bottom = -90.13434
 theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
 theme_override_fonts/font = SubResource("FontVariation_bwr10")
 theme_override_font_sizes/font_size = 10
 text = "Egg"
+horizontal_alignment = 1
+
+[node name="Boiler" type="Label" parent="bg/Egg" unique_id=1610140188]
+layout_mode = 0
+offset_left = 82.679504
+offset_top = -0.00023651123
+offset_right = 128.18527
+offset_bottom = 20.752052
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Boiler"
+horizontal_alignment = 1
+
+[node name="Serve" type="Label" parent="bg/Egg/Boiler" unique_id=986316667]
+layout_mode = 0
+offset_left = 87.486496
+offset_top = 0.7492278
+offset_right = 132.99226
+offset_bottom = 21.501516
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Serve"
 horizontal_alignment = 1
 
 [node name="RamenBox" type="Sprite2D" parent="." unique_id=1206286558]
@@ -146,11 +172,10 @@ metadata/_edit_lock_ = true
 
 [node name="boilingPot" type="Sprite2D" parent="." unique_id=1488604855]
 z_index = 1
-position = Vector2(674.09546, 496.37546)
+position = Vector2(715.09546, 491.37546)
 scale = Vector2(0.3095879, 0.25089288)
 texture = ExtResource("8_fkw1m")
 script = ExtResource("9_fkw1m")
-metadata/_edit_group_ = true
 
 [node name="Area2D" type="Area2D" parent="boilingPot" unique_id=1961092820 groups=["poat"]]
 position = Vector2(-66.967705, 21.541271)
@@ -164,9 +189,15 @@ shape = SubResource("CircleShape2D_l3qly")
 metadata/_edit_lock_ = true
 
 [node name="ServingPlate" type="Sprite2D" parent="." unique_id=1943695612]
-position = Vector2(1025, 530)
+position = Vector2(988, 528)
 scale = Vector2(0.2810242, 0.2810242)
 texture = ExtResource("10_rakbq")
+script = ExtResource("12_okst0")
+
+[node name="Area2D" type="Area2D" parent="ServingPlate" unique_id=8791912]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ServingPlate/Area2D" unique_id=361986657]
+shape = SubResource("CircleShape2D_fuc61")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2090060006]
 offset_left = 961.0
@@ -176,19 +207,21 @@ offset_bottom = 281.0
 
 [node name="Customer" type="Sprite2D" parent="." unique_id=1551067252]
 z_index = -1
-position = Vector2(88, 492)
+position = Vector2(270, 488)
 scale = Vector2(1.5012555, 1.6454881)
 texture = ExtResource("5_eorc4")
 
 [node name="FryingPan" type="Sprite2D" parent="." unique_id=2045520453]
 
 [node name="Heater" type="Sprite2D" parent="." unique_id=1550496653]
-position = Vector2(674.1909, 560.4109)
+position = Vector2(715.1909, 555.4109)
 scale = Vector2(0.28249297, 0.24047449)
 texture = ExtResource("11_l3qly")
-metadata/_edit_group_ = true
+
+[node name="CustomerQueue" parent="." unique_id=588104561 instance=ExtResource("15_fuc61")]
 
 [connection signal="input_event" from="RamenBox/RamenBoxArea" to="RamenBox" method="_on_ramin_box_area_input_event"]
 [connection signal="input_event" from="BeefBox/RaminBoxArea" to="BeefBox" method="_on_ramin_box_area_input_event"]
 [connection signal="input_event" from="ChickenBox/RaminBoxArea" to="ChickenBox" method="_on_ramin_box_area_input_event"]
 [connection signal="input_event" from="EggBox/RaminBoxArea" to="EggBox" method="_on_ramin_box_area_input_event"]
+[connection signal="input_event" from="ServingPlate/Area2D" to="ServingPlate" method="_on_area_2d_input_event"]
