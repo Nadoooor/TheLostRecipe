@@ -3,11 +3,24 @@
 [ext_resource type="Script" uid="uid://dowcgttu83kva" path="res://Scenes/Scripts/customer_1.gd" id="1_to5sg"]
 [ext_resource type="Texture2D" uid="uid://0stt5em2shvn" path="res://assets/customer.png" id="2_cat77"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dmmky"]
+size = Vector2(64.40506, 176.81012)
+
 [node name="Customer1" type="Node2D" unique_id=402511478]
 script = ExtResource("1_to5sg")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2133242350]
+[node name="Area2D" type="Area2D" parent="." unique_id=2133984986 groups=["customers"]]
+position = Vector2(564, 300)
+scale = Vector2(1.6458334, 1.6458334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=367504724]
+position = Vector2(1.8227844, -3.9493713)
+shape = SubResource("RectangleShape2D_dmmky")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2133242350 groups=["customers"]]
 z_index = -1
 position = Vector2(564, 300)
 scale = Vector2(1.6458334, 1.6458334)
 texture = ExtResource("2_cat77")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
