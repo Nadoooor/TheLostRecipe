@@ -1,3 +1,29 @@
 [gd_scene format=3 uid="uid://s7tgaieg1hif"]
 
+[ext_resource type="Texture2D" uid="uid://ddxsurrlcfw5a" path="res://assets/Menu.png" id="1_6pedr"]
+[ext_resource type="Texture2D" uid="uid://cxqhxe0neq6n8" path="res://assets/bg.png" id="2_syfuq"]
+[ext_resource type="Texture2D" uid="uid://c5xgddsw82ger" path="res://assets/untitled_artwork_720.png" id="3_s2c3o"]
+[ext_resource type="Script" uid="uid://kguaq5cbeunj" path="res://Scenes/button.gd" id="4_ma218"]
+
 [node name="Menu" type="Node2D" unique_id=1822214833]
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=630399494]
+position = Vector2(999.99994, 212.99998)
+scale = Vector2(0.30358744, 0.30358747)
+texture = ExtResource("1_6pedr")
+
+[node name="bg" type="Sprite2D" parent="." unique_id=866358832]
+z_index = -32
+position = Vector2(963.9999, 552)
+scale = Vector2(6.0624995, 6.177778)
+texture = ExtResource("2_syfuq")
+
+[node name="Button" type="Button" parent="." unique_id=1698817463]
+offset_left = 606.0
+offset_top = 631.0
+offset_right = 1332.0
+offset_bottom = 824.0
+icon = ExtResource("3_s2c3o")
+script = ExtResource("4_ma218")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
