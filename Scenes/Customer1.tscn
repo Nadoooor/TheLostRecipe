@@ -2,48 +2,12 @@
 
 [ext_resource type="Script" uid="uid://dowcgttu83kva" path="res://Scenes/Scripts/customer_1.gd" id="1_to5sg"]
 [ext_resource type="Texture2D" uid="uid://0stt5em2shvn" path="res://assets/customer.png" id="2_cat77"]
-[ext_resource type="Texture2D" uid="uid://pxxu4wefla78" path="res://assets/textbox.png" id="3_tdnvu"]
-[ext_resource type="FontFile" uid="uid://cyds43kj6jn2m" path="res://assets/zxSpectrumStrict.ttf" id="4_f5i3y"]
 
 [node name="Customer1" type="Node2D" unique_id=402511478]
-z_index = 4
-texture_filter = 1
-position = Vector2(1289.3748, 689.9999)
 script = ExtResource("1_to5sg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2133242350]
-z_index = 4
-texture_filter = 1
-position = Vector2(-239, -215.99994)
-scale = Vector2(3.3438976, 2.9036462)
+z_index = -1
+position = Vector2(564, 300)
+scale = Vector2(1.6458334, 1.6458334)
 texture = ExtResource("2_cat77")
-
-[node name="Text" type="Sprite2D" parent="." unique_id=1345498353]
-z_index = 4
-texture_filter = 1
-position = Vector2(-17.50003, -527.25)
-scale = Vector2(11.708333, 10.349999)
-texture = ExtResource("3_tdnvu")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="Text" unique_id=1803095058]
-
-[node name="Ord" type="Label" parent="Text/CanvasLayer" unique_id=1130476369]
-unique_name_in_owner = true
-z_index = 4
-texture_filter = 1
-anchors_preset = -1
-anchor_left = 0.002669239
-anchor_right = 0.109960906
-anchor_bottom = 0.06944442
-offset_left = 1148.875
-offset_top = 122.0
-offset_right = 1177.875
-offset_bottom = 131.00003
-theme_override_colors/font_color = Color(0, 0.0012900031, 0.00055181305, 1)
-theme_override_fonts/font = ExtResource("4_f5i3y")
-theme_override_font_sizes/font_size = 30
-text = "Hi, I want a Ramen with "
-autowrap_mode = 2
-autowrap_trim_flags = 0
-justification_flags = 171
-metadata/_edit_use_anchors_ = true

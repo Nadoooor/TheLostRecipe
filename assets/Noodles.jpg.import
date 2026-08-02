@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pxxu4wefla78"
-path="res://.godot/imported/textbox.png-d6c24738881ee746f8b556a776544dcb.ctex"
+uid="uid://cm1op7i52vcpt"
+path="res://.godot/imported/Noodles.jpg-f37cae03dae407ab3d66b3549a31e0d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textbox.png"
-dest_files=["res://.godot/imported/textbox.png-d6c24738881ee746f8b556a776544dcb.ctex"]
+source_file="res://assets/Noodles.jpg"
+dest_files=["res://.godot/imported/Noodles.jpg-f37cae03dae407ab3d66b3549a31e0d2.ctex"]
 
 [params]
 

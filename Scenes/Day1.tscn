@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d0xb4vmx4pjfc"]
 
 [ext_resource type="Texture2D" uid="uid://cxqhxe0neq6n8" path="res://assets/bg.png" id="1_2wwur"]
-[ext_resource type="Texture2D" uid="uid://ceprvrh4wa8w8" path="res://assets/Table.png" id="1_fkw1m"]
+[ext_resource type="Texture2D" uid="uid://cn6iee6etjsaw" path="res://assets/Table.png" id="1_fkw1m"]
 [ext_resource type="Texture2D" uid="uid://dfod5dh5jktlw" path="res://assets/Box.png" id="2_1qpqp"]
 [ext_resource type="Script" uid="uid://vb2d5fnklteh" path="res://Scenes/Scripts/ramin_box.gd" id="3_6hct4"]
 [ext_resource type="PackedScene" uid="uid://d0dtnk8a2qxik" path="res://Scenes/Noodles.tscn" id="4_1qpqp"]
@@ -15,198 +15,101 @@
 [ext_resource type="Script" uid="uid://ce5jjkll85ijn" path="res://Scenes/Scripts/serving_plate.gd" id="12_okst0"]
 [ext_resource type="PackedScene" uid="uid://cdtjtkqk21dft" path="res://Scenes/Customer_queue.tscn" id="15_fuc61"]
 
-[sub_resource type="FontFile" id="FontFile_okst0"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/77/0/ascent = 0.0
-cache/0/77/0/descent = 0.0
-cache/0/77/0/underline_position = 0.0
-cache/0/77/0/underline_thickness = 0.0
-cache/0/77/0/scale = 1.0
-cache/0/74/0/ascent = 0.0
-cache/0/74/0/descent = 0.0
-cache/0/74/0/underline_position = 0.0
-cache/0/74/0/underline_thickness = 0.0
-cache/0/74/0/scale = 1.0
-cache/0/72/0/ascent = 0.0
-cache/0/72/0/descent = 0.0
-cache/0/72/0/underline_position = 0.0
-cache/0/72/0/underline_thickness = 0.0
-cache/0/72/0/scale = 1.0
-cache/0/71/0/ascent = 0.0
-cache/0/71/0/descent = 0.0
-cache/0/71/0/underline_position = 0.0
-cache/0/71/0/underline_thickness = 0.0
-cache/0/71/0/scale = 1.0
-cache/0/69/0/ascent = 0.0
-cache/0/69/0/descent = 0.0
-cache/0/69/0/underline_position = 0.0
-cache/0/69/0/underline_thickness = 0.0
-cache/0/69/0/scale = 1.0
-cache/0/68/0/ascent = 0.0
-cache/0/68/0/descent = 0.0
-cache/0/68/0/underline_position = 0.0
-cache/0/68/0/underline_thickness = 0.0
-cache/0/68/0/scale = 1.0
-cache/0/66/0/ascent = 0.0
-cache/0/66/0/descent = 0.0
-cache/0/66/0/underline_position = 0.0
-cache/0/66/0/underline_thickness = 0.0
-cache/0/66/0/scale = 1.0
-cache/0/65/0/ascent = 0.0
-cache/0/65/0/descent = 0.0
-cache/0/65/0/underline_position = 0.0
-cache/0/65/0/underline_thickness = 0.0
-cache/0/65/0/scale = 1.0
-cache/0/64/0/ascent = 0.0
-cache/0/64/0/descent = 0.0
-cache/0/64/0/underline_position = 0.0
-cache/0/64/0/underline_thickness = 0.0
-cache/0/64/0/scale = 1.0
-cache/0/63/0/ascent = 0.0
-cache/0/63/0/descent = 0.0
-cache/0/63/0/underline_position = 0.0
-cache/0/63/0/underline_thickness = 0.0
-cache/0/63/0/scale = 1.0
-cache/0/62/0/ascent = 0.0
-cache/0/62/0/descent = 0.0
-cache/0/62/0/underline_position = 0.0
-cache/0/62/0/underline_thickness = 0.0
-cache/0/62/0/scale = 1.0
-cache/0/61/0/ascent = 0.0
-cache/0/61/0/descent = 0.0
-cache/0/61/0/underline_position = 0.0
-cache/0/61/0/underline_thickness = 0.0
-cache/0/61/0/scale = 1.0
-cache/0/60/0/ascent = 0.0
-cache/0/60/0/descent = 0.0
-cache/0/60/0/underline_position = 0.0
-cache/0/60/0/underline_thickness = 0.0
-cache/0/60/0/scale = 1.0
-cache/0/59/0/ascent = 0.0
-cache/0/59/0/descent = 0.0
-cache/0/59/0/underline_position = 0.0
-cache/0/59/0/underline_thickness = 0.0
-cache/0/59/0/scale = 1.0
-cache/0/56/0/ascent = 0.0
-cache/0/56/0/descent = 0.0
-cache/0/56/0/underline_position = 0.0
-cache/0/56/0/underline_thickness = 0.0
-cache/0/56/0/scale = 1.0
-cache/0/55/0/ascent = 0.0
-cache/0/55/0/descent = 0.0
-cache/0/55/0/underline_position = 0.0
-cache/0/55/0/underline_thickness = 0.0
-cache/0/55/0/scale = 1.0
-cache/0/53/0/ascent = 0.0
-cache/0/53/0/descent = 0.0
-cache/0/53/0/underline_position = 0.0
-cache/0/53/0/underline_thickness = 0.0
-cache/0/53/0/scale = 1.0
-cache/0/54/0/ascent = 0.0
-cache/0/54/0/descent = 0.0
-cache/0/54/0/underline_position = 0.0
-cache/0/54/0/underline_thickness = 0.0
-cache/0/54/0/scale = 1.0
-cache/0/57/0/ascent = 0.0
-cache/0/57/0/descent = 0.0
-cache/0/57/0/underline_position = 0.0
-cache/0/57/0/underline_thickness = 0.0
-cache/0/57/0/scale = 1.0
-cache/0/58/0/ascent = 0.0
-cache/0/58/0/descent = 0.0
-cache/0/58/0/underline_position = 0.0
-cache/0/58/0/underline_thickness = 0.0
-cache/0/58/0/scale = 1.0
+[sub_resource type="FontVariation" id="FontVariation_bwr10"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kry3j"]
-size = Vector2(31.999752, 15.92434)
+size = Vector2(148.16124, 133.50243)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l3qly"]
 radius = 257.39703
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fuc61"]
-radius = 191.53145
+radius = 177.10034
 
 [node name="Main" type="Node2D" unique_id=102969712]
 
-[node name="backbg" type="Sprite2D" parent="." unique_id=1097011211]
-z_index = -20
-position = Vector2(959.99994, 534.29865)
-scale = Vector2(6.0187497, 6.0699844)
-texture = ExtResource("1_2wwur")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="backbg" unique_id=577342233]
-
-[node name="Label4" type="Label" parent="backbg/CanvasLayer" unique_id=1854540268]
-offset_left = 795.0
-offset_top = 997.0
-offset_right = 1000.0
-offset_bottom = 1076.0
-theme_override_colors/font_color = Color(1, 0.34117648, 0.047058824, 1)
-theme_override_fonts/font = SubResource("FontFile_okst0")
-theme_override_font_sizes/font_size = 59
-text = "Veggies"
-horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="Label3" type="Label" parent="backbg/CanvasLayer" unique_id=1269401828]
-offset_left = 550.0
-offset_top = 997.0
-offset_right = 755.0
-offset_bottom = 1076.0
-theme_override_colors/font_color = Color(1, 0.34117648, 0.047058824, 1)
-theme_override_fonts/font = SubResource("FontFile_okst0")
-theme_override_font_sizes/font_size = 59
-text = "Egg"
-horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="Label2" type="Label" parent="backbg/CanvasLayer" unique_id=347360700]
-offset_left = 319.0
-offset_top = 996.0
-offset_right = 499.0
-offset_bottom = 1075.0
-theme_override_colors/font_color = Color(1, 0.34117648, 0.047058824, 1)
-theme_override_fonts/font = SubResource("FontFile_okst0")
-theme_override_font_sizes/font_size = 59
-text = "Beef"
-horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="backbg/CanvasLayer" unique_id=1995538165]
-offset_left = 72.0
-offset_top = 996.0
-offset_right = 252.0
-offset_bottom = 1075.0
-theme_override_colors/font_color = Color(1, 0.34117648, 0.047058824, 1)
-theme_override_fonts/font = SubResource("FontFile_okst0")
-theme_override_font_sizes/font_size = 59
-text = "Ramen"
-metadata/_edit_use_anchors_ = true
-
-[node name="Table" type="Sprite2D" parent="backbg" unique_id=1240278878]
-z_index = 5
-position = Vector2(2.1022124, 70.003624)
-scale = Vector2(1.0095847, 1)
+[node name="bg" type="Sprite2D" parent="." unique_id=1223228354]
+position = Vector2(583.00006, 763)
+scale = Vector2(3.120482, 1.3346939)
 texture = ExtResource("1_fkw1m")
 
+[node name="backbg" type="Sprite2D" parent="bg" unique_id=1097011211]
+z_index = -10
+position = Vector2(-1.7625504, -319.54895)
+scale = Vector2(0.28866735, 0.68575853)
+texture = ExtResource("1_2wwur")
+
+[node name="Ramen" type="Label" parent="bg" unique_id=300196370]
+offset_left = -186.83012
+offset_top = -110.88681
+offset_right = -141.32436
+offset_bottom = -90.13452
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Ramen"
+horizontal_alignment = 1
+
+[node name="Chicken" type="Label" parent="bg" unique_id=1833646138]
+offset_left = -103.50967
+offset_top = -110.88669
+offset_right = -58.0039
+offset_bottom = -90.1344
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Chicken"
+horizontal_alignment = 1
+
+[node name="Beef" type="Label" parent="bg" unique_id=1737259374]
+offset_left = -145.16989
+offset_top = -110.88672
+offset_right = -99.66412
+offset_bottom = -90.13443
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Beef"
+horizontal_alignment = 1
+
+[node name="Egg" type="Label" parent="bg" unique_id=605112010]
+offset_left = -61.849426
+offset_top = -110.88663
+offset_right = -16.343658
+offset_bottom = -90.13434
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Egg"
+horizontal_alignment = 1
+
+[node name="Boiler" type="Label" parent="bg/Egg" unique_id=1610140188]
+layout_mode = 0
+offset_left = 82.679504
+offset_top = -0.00023651123
+offset_right = 128.18527
+offset_bottom = 20.752052
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Boiler"
+horizontal_alignment = 1
+
+[node name="Serve" type="Label" parent="bg/Egg/Boiler" unique_id=986316667]
+layout_mode = 0
+offset_left = 87.486496
+offset_top = 0.7492278
+offset_right = 132.99226
+offset_bottom = 21.501516
+theme_override_colors/font_color = Color(1, 0.43137255, 0.11372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwr10")
+theme_override_font_sizes/font_size = 10
+text = "Serve"
+horizontal_alignment = 1
+
 [node name="RamenBox" type="Sprite2D" parent="." unique_id=1206286558]
-z_index = 10
-position = Vector2(161, 939)
-scale = Vector2(7.3438096, 7.2227097)
+position = Vector2(68, 543)
+scale = Vector2(0.849, 0.835)
 texture = ExtResource("2_1qpqp")
 script = ExtResource("3_6hct4")
 item_to_spawn = ExtResource("4_1qpqp")
@@ -214,16 +117,14 @@ item_to_spawn = ExtResource("4_1qpqp")
 [node name="RamenBoxArea" type="Area2D" parent="RamenBox" unique_id=1858639613]
 
 [node name="RamenBoxColl" type="CollisionShape2D" parent="RamenBox/RamenBoxArea" unique_id=548450876]
-z_index = 10
-position = Vector2(-0.06807709, 0.20767212)
-scale = Vector2(0.9999995, 1)
+position = Vector2(2.645935, 2.5488281)
+scale = Vector2(0.9999995, 0.9999998)
 shape = SubResource("RectangleShape2D_kry3j")
 metadata/_edit_lock_ = true
 
 [node name="BeefBox" type="Sprite2D" parent="." unique_id=1371871328]
-z_index = 10
-position = Vector2(408.99997, 939.99994)
-scale = Vector2(7.344, 7.344)
+position = Vector2(199.5, 543.125)
+scale = Vector2(0.8492461, 0.84966195)
 texture = ExtResource("2_1qpqp")
 script = ExtResource("3_6hct4")
 item_to_spawn = ExtResource("4_6hct4")
@@ -231,15 +132,14 @@ item_to_spawn = ExtResource("4_6hct4")
 [node name="RaminBoxArea" type="Area2D" parent="BeefBox" unique_id=1221507234]
 
 [node name="RaminBoxColl" type="CollisionShape2D" parent="BeefBox/RaminBoxArea" unique_id=1332064927]
-position = Vector2(-1.9855288e-05, -1.4066696e-05)
+position = Vector2(0, 2.5488281)
 scale = Vector2(0.9999996, 0.99999976)
 shape = SubResource("RectangleShape2D_kry3j")
 metadata/_edit_lock_ = true
 
 [node name="ChickenBox" type="Sprite2D" parent="." unique_id=133485087]
-z_index = 10
-position = Vector2(899.99994, 939.99994)
-scale = Vector2(7.344, 7.344)
+position = Vector2(330, 544)
+scale = Vector2(0.849, 0.849)
 texture = ExtResource("2_1qpqp")
 script = ExtResource("3_6hct4")
 item_to_spawn = ExtResource("5_y0ac1")
@@ -247,15 +147,14 @@ item_to_spawn = ExtResource("5_y0ac1")
 [node name="RaminBoxArea" type="Area2D" parent="ChickenBox" unique_id=8485245]
 
 [node name="RaminBoxColl" type="CollisionShape2D" parent="ChickenBox/RaminBoxArea" unique_id=717452716]
-position = Vector2(0, -3.4809113e-05)
+position = Vector2(0, 2.5488281)
 scale = Vector2(0.99999964, 0.99999976)
 shape = SubResource("RectangleShape2D_kry3j")
 metadata/_edit_lock_ = true
 
 [node name="EggBox" type="Sprite2D" parent="." unique_id=1589049036]
-z_index = 10
-position = Vector2(653, 939.99994)
-scale = Vector2(7.344, 7.344)
+position = Vector2(458, 544)
+scale = Vector2(0.849, 0.849)
 texture = ExtResource("2_1qpqp")
 script = ExtResource("3_6hct4")
 item_to_spawn = ExtResource("6_eorc4")
@@ -265,15 +164,15 @@ position = Vector2(51.983543, 45.434326)
 scale = Vector2(0.97485363, 0.8892823)
 
 [node name="RaminBoxColl" type="CollisionShape2D" parent="EggBox/RaminBoxArea" unique_id=639875179]
-position = Vector2(-53.464127, -51.24412)
-scale = Vector2(0.99999976, 0.99999976)
+position = Vector2(-48.385742, -43.237183)
+scale = Vector2(0.9999997, 0.99999976)
 shape = SubResource("RectangleShape2D_kry3j")
 metadata/_edit_lock_ = true
 
 [node name="boilingPot" type="Sprite2D" parent="." unique_id=1488604855]
-z_index = 10
-position = Vector2(1322.0001, 749)
-scale = Vector2(0.6153247, 0.4986648)
+z_index = 1
+position = Vector2(715.09546, 491.37546)
+scale = Vector2(0.3095879, 0.25089288)
 texture = ExtResource("8_fkw1m")
 script = ExtResource("9_fkw1m")
 
@@ -289,9 +188,8 @@ shape = SubResource("CircleShape2D_l3qly")
 metadata/_edit_lock_ = true
 
 [node name="ServingPlate" type="Sprite2D" parent="." unique_id=1943695612]
-z_index = 10
-position = Vector2(1731, 878)
-scale = Vector2(0.5610896, 0.5610896)
+position = Vector2(988, 528)
+scale = Vector2(0.2810242, 0.2810242)
 texture = ExtResource("10_rakbq")
 script = ExtResource("12_okst0")
 
@@ -309,9 +207,8 @@ offset_bottom = 281.0
 [node name="FryingPan" type="Sprite2D" parent="." unique_id=2045520453]
 
 [node name="Heater" type="Sprite2D" parent="." unique_id=1550496653]
-z_index = 9
-position = Vector2(1317, 909)
-scale = Vector2(0.514694, 0.43813753)
+position = Vector2(715.1909, 555.4109)
+scale = Vector2(0.28249297, 0.24047449)
 texture = ExtResource("11_l3qly")
 
 [node name="CustomerQueue" parent="." unique_id=588104561 instance=ExtResource("15_fuc61")]
