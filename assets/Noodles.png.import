@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciy1r02vhjlx3"
-path="res://.godot/imported/Table0.png-4128fe3d4d596c2a342b95f5243f7de0.ctex"
+uid="uid://dapx75nh02rcl"
+path="res://.godot/imported/Noodles.png-54896ebd8f590b2490f3ef345b7028bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Table0.png"
-dest_files=["res://.godot/imported/Table0.png-4128fe3d4d596c2a342b95f5243f7de0.ctex"]
+source_file="res://assets/Noodles.png"
+dest_files=["res://.godot/imported/Noodles.png-54896ebd8f590b2490f3ef345b7028bd.ctex"]
 
 [params]
 

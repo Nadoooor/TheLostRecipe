@@ -17,7 +17,6 @@ func setup_customer(spawn_pos : Vector2, target_pos : Vector2, visual_texture: T
 	# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
-	
 
 # for the orders
 func _on_reached_destination() -> void :

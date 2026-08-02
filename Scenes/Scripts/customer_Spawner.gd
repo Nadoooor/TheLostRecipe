@@ -2,8 +2,8 @@ extends Node2D
 
 @export var customer_scene : PackedScene
 @export var customer_sprites : Array[Texture2D]
-var spawn_postion  = Vector2(-574,180)
-var counter_position = Vector2(-100,180)
+var spawn_postion  = Vector2(-950,-200)
+var counter_position = Vector2(-100,-180)
 var customers_lapse = 0
 var rand = 0
 
@@ -29,10 +29,6 @@ func _on_timer_timeout() -> void:
 	print(customers_lapse)
 	
 	
-	
-#func _on_customer_ordered(order_name : String ) ->void :
-
-
 
 func _ready() -> void:
 	rand = randi_range(5, 10)

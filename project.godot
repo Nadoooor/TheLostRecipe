@@ -15,6 +15,12 @@ run/main_scene="uid://d0xb4vmx4pjfc"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1860
+window/size/viewport_height=1080
+window/size/mode=3
+
 [global_group]
 
 poat=""
@@ -25,6 +31,7 @@ poat=""
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
