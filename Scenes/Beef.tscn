@@ -4,18 +4,19 @@
 [ext_resource type="Script" uid="uid://jn51ps8rfodi" path="res://Scenes/Scripts/beef.gd" id="2_hriyc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hriyc"]
-size = Vector2(438.00003, 470)
+size = Vector2(12.000008, 12)
 
 [node name="Beef" type="Sprite2D" unique_id=1392874284]
-position = Vector2(621.99994, 313.99997)
-scale = Vector2(0.5, 0.5)
+texture_filter = 1
+position = Vector2(1051, 411.99988)
+scale = Vector2(10, 10)
 texture = ExtResource("1_hriyc")
 script = ExtResource("2_hriyc")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=524828137]
+[node name="Area2D" type="Area2D" parent="." unique_id=524828137 groups=["Food"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=104361767]
-position = Vector2(5.000122, 5.000061)
+position = Vector2(0.00012207031, 6.1035156e-05)
 shape = SubResource("RectangleShape2D_hriyc")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

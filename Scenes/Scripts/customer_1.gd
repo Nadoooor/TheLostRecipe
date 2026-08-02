@@ -1,6 +1,7 @@
 extends Node2D
 signal ordered(recipe_name)
 @export var target_position : Vector2
+var served = false
 @export var move_duration: float = 1.5
 var ing = ["Beef", "Egg", "Veggie"]
 var order = []
@@ -39,3 +40,8 @@ func _on_reached_destination() -> void :
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area.is_in_group("Serving"):
+		queue_free()

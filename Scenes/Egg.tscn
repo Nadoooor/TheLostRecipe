@@ -4,18 +4,20 @@
 [ext_resource type="Script" uid="uid://bt1tepghs4lqx" path="res://Scenes/Scripts/egg.gd" id="1_eh8xx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dyx0d"]
-size = Vector2(442, 433)
+size = Vector2(12, 14)
 
 [node name="Egg" type="Sprite2D" unique_id=1278509049]
-position = Vector2(600, 360)
-scale = Vector2(0.5, 0.5)
+texture_filter = 1
+position = Vector2(951, 547)
+scale = Vector2(10, 10)
 texture = ExtResource("1_dyx0d")
 script = ExtResource("1_eh8xx")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1791547328]
+[node name="Area2D" type="Area2D" parent="." unique_id=1791547328 groups=["Food"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=221653021]
-position = Vector2(4, 9.5)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_dyx0d")
+metadata/_edit_lock_ = true
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

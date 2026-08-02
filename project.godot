@@ -15,9 +15,17 @@ run/main_scene="uid://d0xb4vmx4pjfc"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
 [global_group]
 
 poat=""
+customers=""
+Food=""
+Serving=""
 
 [physics]
 

@@ -1,21 +1,23 @@
 [gd_scene format=3 uid="uid://d0dtnk8a2qxik"]
 
-[ext_resource type="Texture2D" uid="uid://cm1op7i52vcpt" path="res://assets/Noodles.jpg" id="1_hl5nw"]
+[ext_resource type="Texture2D" uid="uid://cvmi0y58l2uot" path="res://assets/Noodle.png" id="1_hl5nw"]
 [ext_resource type="Script" uid="uid://bshvdwdj60ets" path="res://Scenes/Scripts/noodles.gd" id="1_w3nna"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hl5nw"]
-size = Vector2(231.42859, 274.46967)
+size = Vector2(15.998642, 16.731201)
 
-[node name="Beef" type="Sprite2D" unique_id=1034022883]
-position = Vector2(574, 340)
-scale = Vector2(0.7, 0.66)
+[node name="Beef" type="Sprite2D" unique_id=1034022883 groups=["Serving"]]
+texture_filter = 1
+position = Vector2(962.99994, 514)
+scale = Vector2(10, 9.429)
 texture = ExtResource("1_hl5nw")
 script = ExtResource("1_w3nna")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1601152640]
+[node name="Area2D" type="Area2D" parent="." unique_id=1601152640 groups=["Food"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1674316000]
-position = Vector2(5.7142944, -2.3862915)
+position = Vector2(0.17761993, 0.93930435)
 shape = SubResource("RectangleShape2D_hl5nw")
+metadata/_edit_lock_ = true
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
